@@ -1,0 +1,18 @@
+{
+  "name": "ai-companion-chat",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 3002",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "2.22.3",
+    "@supabase/supabase-js": "^2.117.2",
+    "nuxt": "3.21.11",
+    "undici": "^7.30.0"
+  }
+}
