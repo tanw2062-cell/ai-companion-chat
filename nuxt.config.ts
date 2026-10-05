@@ -39,6 +39,7 @@ export default defineNuxtConfig({
     zpayPid: process.env.ZPAY_PID || '',
     zpayKey: process.env.ZPAY_KEY || '',
     zpayType: process.env.ZPAY_TYPE || 'alipay',
+    zpayMoney: process.env.ZPAY_MONEY || '0.1',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || ''
     }

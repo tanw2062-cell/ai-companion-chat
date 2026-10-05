@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
     type,
     out_trade_no: outTradeNo,
     name: 'Premium Member',
-    money: '9.90',
+    money: String(config.zpayMoney || process.env.ZPAY_MONEY || '0.1'),
     notify_url: `${origin}/api/pay/notify`,
     return_url: `${origin}/pay/return`,
     param: String(user.id),

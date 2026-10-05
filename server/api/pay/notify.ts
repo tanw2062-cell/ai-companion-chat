@@ -31,7 +31,8 @@ export default defineEventHandler(async (event) => {
   if (params.trade_status !== 'TRADE_SUCCESS') {
     return 'success'
   }
-  if (Number(params.money) !== 9.9) {
+  const expectedMoney = Number(config.zpayMoney || process.env.ZPAY_MONEY || '0.1')
+  if (Number(params.money) !== expectedMoney) {
     return 'fail'
   }
 
