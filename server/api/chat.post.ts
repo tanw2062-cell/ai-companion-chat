@@ -1,5 +1,3 @@
-import { COMPANIONS } from '../../utils/companions'
-
 type ChatTurn = { role: 'user' | 'assistant', content: string }
 
 export default defineEventHandler(async (event) => {
